@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<android.support.v7.widget.CardView
+    android:id="@+id/card_view_login"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="match_parent"
+    android:layout_alignParentLeft="true"
+    android:layout_alignParentStart="true"
+    android:layout_centerVertical="true"
+    android:layout_gravity="center"
+    android:layout_margin="15dp"
+    android:focusable="false"
+    android:padding="30dp"
+    card_view:cardCornerRadius="4dp"
+    xmlns:materialdesign="http://schemas.android.com/tools">
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:screenOrientation="portrait">
+
+
+
+    <GridLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:columnCount="5"
+        android:id="@+id/grd">
+
+        <TextView
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/measured"
+            android:layout_row="0"
+            android:layout_column="0"
+            android:textColor="#ff000000" />
+
+        <TextView
+            android:layout_width="90dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/date"
+            android:layout_row="0"
+            android:layout_column="1"
+            android:textColor="#ff000000" />
+
+        <TextView
+            android:layout_width="85dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/time"
+            android:layout_row="0"
+            android:layout_column="2"
+            android:textColor="#ff000000" />
+
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/conc"
+            android:layout_row="0"
+            android:layout_column="3"
+            android:layout_columnSpan="2"
+            android:textColor="#ff000000" />
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/tags" />
+    </GridLayout>
+
+
+</LinearLayout>
+
+</android.support.v7.widget.CardView>

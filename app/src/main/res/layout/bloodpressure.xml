@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:screenOrientation="portrait">
+
+    <LinearLayout
+        android:id="@+id/container_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <include
+            android:id="@+id/toolbar"
+            layout="@layout/toolbar"
+
+           />
+    </LinearLayout>
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:background="@color/background_color"
+        android:layout_below="@+id/container_toolbar">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingTop="20dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/txt_add_systol"
+                    android:text="Enter Systol"
+                    android:textSize="@dimen/Text_view"
+                    android:textColor="@color/list_divider_dark"/>
+
+                <EditText
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/et_add_systol"
+                    android:layout_below="@+id/txt_add_systol"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:inputType="number"
+                    android:textColor="@color/list_divider_dark"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/txt_add_dystol"
+                    android:text="Enter Dystol"
+                    android:layout_below="@+id/et_add_systol"
+                    android:textSize="@dimen/Text_view"
+                    android:textColor="@color/list_divider_dark"/>
+
+                <EditText
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/et_add_dystol"
+                    android:layout_below="@+id/txt_add_dystol"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:textColor="@color/list_divider_dark"
+                    android:inputType="number" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/txt_add_pulse"
+                    android:text="Enter Pulse"
+                    android:layout_below="@+id/et_add_dystol"
+                    android:textSize="@dimen/Text_view"
+                    android:textColor="@color/list_divider_dark"/>
+
+                <EditText
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/et_add_pulse"
+                    android:textColor="@color/list_divider_dark"
+                    android:layout_below="@+id/txt_add_pulse"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:inputType="number" />
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="OK!!"
+                    android:id="@+id/btn_ent"
+                    android:layout_below="@+id/et_add_pulse"
+                    android:layout_centerHorizontal="true"
+                    android:background="#009688"
+                    android:textColor="@android:color/white"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:textSize="@dimen/Text_view"/>
+
+            </RelativeLayout>
+        </ScrollView>
+</RelativeLayout>
+
+</RelativeLayout>

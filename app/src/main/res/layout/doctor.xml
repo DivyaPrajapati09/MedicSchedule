@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    android:screenOrientation="portrait">
+    <RelativeLayout
+        android:id="@+id/toolbar_container"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#009688"
+        android:paddingTop="@dimen/tool_bar_top_padding">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:layout_centerHorizontal="true"
+            android:background="#009688"
+            android:gravity="center"
+            android:text="Add a Doctors"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="@android:color/white"
+            android:autoText="true" />
+
+    </RelativeLayout>
+
+
+    <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+        android:id="@+id/d_name"
+        android:hint="Enter Doctor Name"
+        android:textColor="#ff000000"
+        android:text="Dr. " />
+
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textEmailAddress"
+        android:ems="10"
+        android:id="@+id/txt_mail"
+        android:layout_gravity="center_horizontal"
+        android:hint="Enter Doctor&apos;s Mail"
+        android:textColor="#ff000000" />
+
+           <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="phone"
+        android:ems="10"
+        android:id="@+id/txt_phn"
+        android:layout_gravity="center_horizontal"
+        android:hint="Enter Doctor&apos;s Phone No."
+        android:textColor="#ff000000" />
+
+    <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Done"
+            android:id="@+id/b11" android:layout_gravity="center_horizontal"
+        android:background="#009688"
+        android:textColor="#ffffffff"
+        android:layout_below="@+id/d_name"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="59dp" />
+
+
+
+    </LinearLayout>
+
+
+
+
+

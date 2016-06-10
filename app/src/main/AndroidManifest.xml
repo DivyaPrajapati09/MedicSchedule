@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.asus.medic_schedule">
+
+
+    <permission
+        android:name="com.example.asus.medic_schedule.permission.MAPS_RECEIVE"
+        android:protectionLevel="signature" />
+
+    <uses-permission android:name="com.example.asus.medic_schedule.permission.MAPS_RECEIVE" />
+
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <uses-feature android:name="android.hardware.vibrate" android:required="false" />
+
+    <!-- Required to show current location -->
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+
+    <!-- Required OpenGL ES 2.0. for Maps V2 -->
+    <uses-feature
+        android:glEsVersion="0x00020000"
+        android:required="true" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+
+    <uses-sdk android:minSdkVersion="8"
+        android:targetSdkVersion="21"
+        tools:overrideLibrary="hugo.weaving" />
+    <uses-configuration android:reqTouchScreen="stylus" />
+    <uses-configuration android:reqTouchScreen="finger" />
+
+    <uses-feature android:name="android.hardware.vibrate" android:required="false" />
+
+    <supports-screens
+        android:anyDensity="true"
+        android:largeScreens="true"
+        android:normalScreens="true"
+        android:smallScreens="true"
+        android:xlargeScreens="true"
+        />
+
+
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/icon"
+        android:label="Medic Schedule"
+        android:theme="@style/MaterialDrawerTheme.Light.DarkToolbar.TranslucentStatus" >
+        <activity
+            android:name="com.example.asus.medic_schedule.MainActivity"
+            android:theme="@style/MaterialDrawerTheme.Light.DarkToolbar.TranslucentStatus"
+            android:label="Medic Schedule" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+       <activity android:name=".Patient"
+            android:label="Patient"
+           android:theme="@style/MaterialDrawerTheme.Light.DarkToolbar.TranslucentStatus" />
+
+        <activity android:name=".Doctor"
+            android:label="Doctor"
+            android:theme="@style/MaterialDrawerTheme.Light.DarkToolbar.TranslucentStatus" />
+
+
+        <activity android:name=".Datalist_p"
+            android:label="Patient Data"
+            android:theme="@style/MaterialDrawerTheme.Light.DarkToolbar.TranslucentStatus" />
+
+        <activity android:name=".Datalist_d"
+            android:label="DoctorData"
+            android:theme="@style/MaterialDrawerTheme.Light.DarkToolbar.TranslucentStatus" />
+
+        <activity android:name=".Medicine"
+            android:label="Medicine"
+            android:theme="@style/MaterialDrawerTheme.Light.DarkToolbar.TranslucentStatus" />
+
+        <activity android:name=".Datalist_m"
+            android:label="Medicine Data"
+            android:theme="@style/MaterialDrawerTheme.Light.DarkToolbar.TranslucentStatus" />
+
+        <activity android:name=".SystemSettings"
+            android:label="Medic-Schedule"
+            android:theme="@style/MaterialDrawerTheme.Light.DarkToolbar.TranslucentStatus" />
+
+        <activity android:name=".BloodPressure"
+            android:label="Blood Pressure"
+            android:theme="@style/MaterialDrawerTheme.Light.DarkToolbar.TranslucentStatus" />
+
+        <activity android:name=".DataList_bp"
+            android:label="Blood Pressure Data"
+            android:theme="@style/MaterialDrawerTheme.Light.DarkToolbar.TranslucentStatus" />
+
+        <activity android:name=".PlaceDetailsActivity"
+            android:label="Places"
+            android:theme="@style/MaterialDrawerTheme.Light.DarkToolbar.TranslucentStatus" />
+
+        <activity android:name=".Places"
+            android:label="Places"
+            android:theme="@style/MaterialDrawerTheme.Light.DarkToolbar.TranslucentStatus" />
+
+        <activity android:name=".BloodSugar"
+            android:label="Blood Sugar"
+            android:theme="@style/MaterialDrawerTheme.Light.DarkToolbar.TranslucentStatus" />
+
+        <activity android:name=".DataList_su"
+            android:label="List"
+            android:theme="@style/MaterialDrawerTheme.Light.DarkToolbar.TranslucentStatus" />
+
+        <activity android:name=".ClinicList"
+            android:label="List of near-by clinics"
+            android:theme="@style/MaterialDrawerTheme.Light.DarkToolbar.TranslucentStatus"/>
+
+        <activity android:name=".Ambulance"
+            android:label="List of Ambulance"
+            android:theme="@style/MaterialDrawerTheme.Light.DarkToolbar.TranslucentStatus"/>
+
+        <activity android:name=".MedicalList"
+            android:label="Medical list"
+            android:theme="@style/MaterialDrawerTheme.Light.DarkToolbar.TranslucentStatus"/>
+        
+        <activity android:name=".DMedicine_List"
+            android:label="Medicine list"
+            android:theme="@style/MaterialDrawerTheme.Light.DarkToolbar.TranslucentStatus"/>
+
+        <activity android:name=".NotificationView"
+            android:label="Notification"
+            android:theme="@style/MaterialDrawerTheme.Light.DarkToolbar.TranslucentStatus"/>
+
+        <activity android:name=".GraphBloodPressure"
+            android:label="Graph"
+            android:theme="@style/MaterialDrawerTheme.Light.DarkToolbar.TranslucentStatus"/>
+
+        <activity android:name=".GraphBloodSugar"
+            android:label="Graph"
+            android:theme="@style/MaterialDrawerTheme.Light.DarkToolbar.TranslucentStatus"/>
+
+
+        <meta-data
+            android:name="com.google.android.maps.v2.API_KEY"
+            android:value="AIzaSyDo7RIiiMSr9ZHeOyBokxAQbuFdttSpWqk" />
+
+        <meta-data android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version"/>
+
+        <receiver android:name=".AlarmReceiver"
+            android:process=":remote" />
+
+    </application>
+
+</manifest>

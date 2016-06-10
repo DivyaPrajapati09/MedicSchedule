@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical">
+    <RelativeLayout
+        android:id="@+id/toolbar_container"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#009688"
+        android:paddingTop="@dimen/tool_bar_top_padding"
+        android:screenOrientation="portrait">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:layout_centerHorizontal="true"
+            android:background="#009688"
+            android:gravity="center"
+            android:text="Search"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="@android:color/white"
+            android:autoText="true" />
+
+    </RelativeLayout>
+
+
+    <Spinner
+        android:id="@+id/spr_place_type"
+        android:layout_width="290dp"
+        android:layout_height="60dp"
+        android:layout_below="@+id/toolbar_container"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:id="@+id/btn_find"
+        android:layout_width="wrap_content"
+        android:layout_height="60dp"
+
+        android:background="#009688"
+        android:textColor="#ffffffff"
+        android:text="Find"
+        android:layout_above="@+id/map"
+        android:layout_toEndOf="@+id/spr_place_type"
+        android:layout_toRightOf="@+id/spr_place_type" />
+
+    <fragment xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/map"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/spr_place_type"
+        class="com.google.android.gms.maps.SupportMapFragment" />
+
+
+</RelativeLayout>

@@ -1,0 +1,69 @@
+<resources>
+    <string name="app_name">DoctorsApp</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+
+
+
+
+    <!-- Drawer Items -->
+    <string name="drawer_item_home">Home</string>
+    <string name="drawer_item_Blood_Pressure">Blood Pressure</string>
+    <string name="drawer_item_Blood_Sugar">Blood Sugar</string>
+    <string name="drawer_item_Ambulance">Ambulance Services</string>
+    <string name="drawer_item_Search">Search</string>
+    <string name="drawer_item_Medical">Near-By Medical Stores</string>
+    <string name="drawer_item_Hospital">Near-By Hospitals</string>
+    <string name="drawer_item_medlist">Medicine List</string>
+
+    <string name="drawer_item_settings"><b><i><u>Settings</u></i></b></string>
+
+    <string name="Measured">Measured</string>
+    <string-array name="Measured">
+        <item>Before breakfast</item>
+        <item>After breakfast</item>
+        <item>Before lunch</item>
+        <item>After lunch</item>
+        <item>Before dinner</item>
+        <item>After dinner</item>
+        <item>Before sleep</item>
+        <item>After sleep</item>
+        <item>Fasting</item>
+        <item>Other</item>
+    </string-array>
+
+    <string name="Reminder">Select the reminder</string>
+    <string-array name="Reminder_arrays">
+        <item>"Monday"</item>
+        <item>"Tuesday"</item>
+        <item>"Wednesday"</item>
+        <item>"Thursday</item>
+        <item>"Friday"</item>
+        <item>"Saturday"</item>
+        <item>"Sunday"</item>
+    </string-array>
+
+    <string name="Medicie_type">Medicine_type</string>
+    <string-array name="Medicine_type">
+    <item>"Capsule"</item>
+    <item>"Syrup"</item>
+    <item>"Injection"</item>
+    <item>"Tablet</item>
+    <item>"Drops"</item>
+    </string-array>
+
+    <string name="place_type">Place</string>
+    <string-array name="place_type">
+        <item>"Hospital"</item>
+        <item>"Doctor"</item>
+        <item>"Church</item>
+    </string-array>
+
+    <string name="place_type_name">Place type</string>
+    <string-array name="place_type_name">
+        <item>"Hospital"</item>
+        <item>"Doctor"</item>
+        <item>"Church"</item>
+    </string-array>
+</resources>

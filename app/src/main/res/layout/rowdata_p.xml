@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<android.support.v7.widget.CardView
+    android:id="@+id/card_view_login"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="match_parent"
+    android:layout_alignParentLeft="true"
+    android:layout_alignParentStart="true"
+    android:layout_centerVertical="true"
+    android:layout_gravity="center"
+    android:layout_margin="20dp"
+    android:focusable="false"
+    android:padding="30dp"
+    card_view:cardCornerRadius="4dp"
+    xmlns:materialdesign="http://schemas.android.com/tools">
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:screenOrientation="portrait">
+
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" android:layout_gravity="center_horizontal"
+        android:columnCount="1"
+        android:orientation="horizontal"
+        android:id="@+id/grd">
+
+
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="40dp"
+            android:id="@+id/p_name"
+            android:textColor="#ff000000"
+            android:textSize="20dp"
+            android:textAlignment="center" />
+    </GridLayout>
+
+</LinearLayout>
+</android.support.v7.widget.CardView>

@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+    android:id="@+id/ll"
+    android:screenOrientation="portrait">
+    <RelativeLayout
+        android:id="@+id/toolbar_container"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#009688"
+        android:paddingTop="@dimen/tool_bar_top_padding">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:layout_centerHorizontal="true"
+            android:background="#009688"
+            android:gravity="center"
+            android:text="Add a Medicine"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="@android:color/white"
+            android:autoText="true"
+            android:id="@+id/textView24" />
+
+    </RelativeLayout>
+
+    <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:ems="10"
+            android:id="@+id/m_name" android:layout_gravity="center_horizontal" android:hint="Enter Medicine Name"
+        android:textColor="#ff000000"
+        android:layout_below="@+id/toolbar_container"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Reminder"
+        android:id="@+id/textView22"
+        android:textStyle="bold"
+        android:textColor="#009688"
+        android:layout_below="@+id/m_name"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <Spinner
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/reminder"
+        android:spinnerMode="dropdown"
+        android:entries="@array/Reminder_arrays"
+        android:layout_below="@+id/textView22"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:id="@+id/reminder_time" android:layout_gravity="center_horizontal"
+            android:textColor="#ff000000"
+            android:layout_below="@+id/reminder"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_toStartOf="@+id/med_add"
+            android:layout_toLeftOf="@+id/med_add"
+            android:hint="Set time" />
+    <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:ems="10"
+            android:id="@+id/duration" android:layout_gravity="center_horizontal" android:hint="Enter duration"
+        android:textColor="#ff000000"
+        android:layout_below="@+id/reminder_time"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/qun"
+        android:hint="Enter total quantity"
+        android:layout_below="@+id/days"
+        android:layout_alignRight="@+id/start_date"
+        android:layout_alignEnd="@+id/start_date"
+        android:inputType="number" />
+
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:id="@+id/start_date" android:layout_gravity="center_horizontal"
+            android:hint="Enter the start date"
+        android:textColor="#ff000000"
+        android:layout_below="@+id/reminder"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_toRightOf="@+id/med_add"
+        android:layout_toEndOf="@+id/med_add" />
+    <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:ems="10"
+            android:id="@+id/days" android:layout_gravity="center_horizontal" android:hint="Enter the no of days"
+        android:textColor="#ff000000"
+        android:layout_below="@+id/duration"
+        android:layout_alignRight="@+id/start_date"
+        android:layout_alignEnd="@+id/start_date" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Select medicine type"
+        android:id="@+id/textView23"
+        android:textColor="#009688"
+        android:textStyle="bold"
+        android:layout_below="@+id/qun"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <Spinner
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/medicine_type"
+        android:spinnerMode="dropdown"
+        android:entries="@array/Medicine_type"
+        android:layout_below="@+id/textView23"
+        android:layout_alignLeft="@+id/textView23"
+        android:layout_alignStart="@+id/textView23" />
+
+    <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/dosage" android:layout_gravity="center_horizontal" android:hint="Enter the dosage"
+        android:textColor="#ff000000"
+        android:layout_below="@+id/medicine_type"
+        android:layout_alignRight="@+id/medicine_type"
+        android:layout_alignEnd="@+id/medicine_type"
+        android:inputType="number" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Select Patient"
+        android:id="@+id/textView19"
+        android:textColor="#009688"
+        android:textStyle="bold"
+        android:layout_below="@+id/dosage"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <Spinner
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/p_name"
+        android:spinnerMode="dropdown"
+        android:layout_below="@+id/textView19"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Select Doctor"
+        android:id="@+id/textView20"
+        android:textColor="#009688"
+        android:textStyle="bold"
+        android:layout_below="@+id/p_name"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <Spinner
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/d_name"
+        android:layout_gravity="center_horizontal"
+        android:spinnerMode="dropdown"
+        android:layout_below="@+id/textView20"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="75dp"
+        android:layout_height="22dp"
+        android:text="Done"
+        android:id="@+id/med_add"
+        android:background="#009688"
+        android:textColor="#ffffffff"
+        android:layout_gravity="center_horizontal"
+        android:layout_below="@+id/d_name"
+        android:layout_centerHorizontal="true" />
+
+</RelativeLayout>
